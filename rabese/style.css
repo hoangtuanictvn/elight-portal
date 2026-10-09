@@ -1,0 +1,221 @@
+:root {
+  --bg: #fbf7ee;
+  --bg-alt: #ffffff;
+  --fg: #1f1a15;
+  --fg-muted: #6b6156;
+  --accent: #A24E42;
+  --accent-2: #2f5d63;
+  --border: rgba(30, 24, 20, 0.08);
+  --shadow: 0 4px 20px rgba(30, 24, 20, 0.06);
+  --radius: 14px;
+  --max-w: 720px;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+          "Helvetica Neue", Arial, "PingFang SC", "Noto Sans SC",
+          "Hiragino Sans", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17130e;
+    --bg-alt: #1f1a13;
+    --fg: #f0e6d5;
+    --fg-muted: #a1968a;
+    --accent: #d95f57;
+    --accent-2: #5eb8c1;
+    --border: rgba(240, 230, 213, 0.08);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+header.site .logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+
+header.site .name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+nav.site {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+}
+nav.site a {
+  color: var(--fg-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav.site a:hover, nav.site a.active { color: var(--accent); }
+
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: 20px;
+  margin: 32px 0 10px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-size: 16px;
+  margin: 22px 0 6px;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; }
+li { margin-bottom: 4px; }
+
+a { color: var(--accent); }
+a:hover { text-decoration: none; }
+
+code {
+  background: var(--bg-alt);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+.meta {
+  color: var(--fg-muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  gap: 6px;
+  background: var(--bg-alt);
+  padding: 4px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+.lang-switch a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--fg-muted);
+}
+.lang-switch a.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+  margin: 16px 0;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 8px 0;
+}
+.contact-btn:hover { opacity: 0.9; }
+
+footer.site {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 32px 0 8px;
+}
+.hero .tagline {
+  color: var(--fg-muted);
+  font-size: 18px;
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-2);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 32px 0;
+}
+.feature h3 {
+  color: var(--fg);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 15px;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+.feature p {
+  font-size: 14px;
+  color: var(--fg-muted);
+  margin: 0;
+}

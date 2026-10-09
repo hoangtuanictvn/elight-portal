@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Warm Chinese-seal-red gradient background -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#D07566"/>
+      <stop offset="100%" stop-color="#A24E42"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F0E6"/>
+    </linearGradient>
+    <linearGradient id="innerEar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFC8CE"/>
+      <stop offset="100%" stop-color="#F79FA8"/>
+    </linearGradient>
+    <radialGradient id="cheek" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"  stop-color="#FFB7A8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFB7A8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Full square base — iOS applies its own icon mask.
+       App Store rejects icons with alpha, so no rounded corners here. -->
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Subtle Chinese cloud pattern watermark, upper right -->
+  <g opacity="0.09" fill="#FFFFFF">
+    <circle cx="820" cy="180" r="42"/>
+    <circle cx="880" cy="200" r="34"/>
+    <circle cx="760" cy="210" r="28"/>
+    <circle cx="880" cy="150" r="24"/>
+  </g>
+
+  <!-- Ears (behind head) -->
+  <g>
+    <!-- Left ear -->
+    <path d="M 360 220
+             C 300 260, 285 380, 330 520
+             C 360 550, 420 540, 430 500
+             C 445 400, 435 300, 400 240 Z"
+          fill="url(#fur)" stroke="#EDE2CE" stroke-width="4"/>
+    <path d="M 360 270
+             C 320 310, 315 400, 350 490
+             C 380 505, 405 500, 410 470
+             C 420 400, 415 320, 385 280 Z"
+          fill="url(#innerEar)"/>
+
+    <!-- Right ear -->
+    <path d="M 664 220
+             C 724 260, 739 380, 694 520
+             C 664 550, 604 540, 594 500
+             C 579 400, 589 300, 624 240 Z"
+          fill="url(#fur)" stroke="#EDE2CE" stroke-width="4"/>
+    <path d="M 664 270
+             C 704 310, 709 400, 674 490
+             C 644 505, 619 500, 614 470
+             C 604 400, 609 320, 639 280 Z"
+          fill="url(#innerEar)"/>
+  </g>
+
+  <!-- Head (roundish) -->
+  <ellipse cx="512" cy="600" rx="290" ry="255" fill="url(#fur)" stroke="#EDE2CE" stroke-width="6"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="330" cy="670" rx="60" ry="35" fill="url(#cheek)"/>
+  <ellipse cx="694" cy="670" rx="60" ry="35" fill="url(#cheek)"/>
+
+  <!-- Eyes: happy/closed arcs, expresses energy + friendliness -->
+  <g stroke="#2A1A16" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M 380 570 Q 420 545, 460 570"/>
+    <path d="M 564 570 Q 604 545, 644 570"/>
+  </g>
+
+  <!-- Small pink nose -->
+  <path d="M 495 640
+           Q 512 625, 529 640
+           Q 522 660, 512 665
+           Q 502 660, 495 640 Z"
+        fill="#E56F82"/>
+
+  <!-- Mouth: tiny y with cute smile -->
+  <path d="M 512 665 L 512 690" stroke="#2A1A16" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 512 690
+           Q 490 715, 470 700"
+        stroke="#2A1A16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M 512 690
+           Q 534 715, 554 700"
+        stroke="#2A1A16" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Speed streak lines behind ears — evokes "Quick" -->
+  <g stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.4" fill="none">
+    <path d="M 130 380 L 260 380"/>
+    <path d="M 130 460 L 240 460"/>
+    <path d="M 130 540 L 220 540"/>
+  </g>
+</svg>

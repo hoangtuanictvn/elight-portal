@@ -1,0 +1,30 @@
+:root {
+    --fg: #1b1b1f; --muted: #6f6b70; --bg: #ffffff; --card: #f6f3f4; --line: #e4dfe1; --accent: #a83a20;
+}
+@media (prefers-color-scheme: dark) {
+    :root { --fg: #e5e1e6; --muted: #a9a6b0; --bg: #131316; --card: #1d1c20; --line: #2e2c31; --accent: #ffb4a1; }
+}
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arial, sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; margin: 0; }
+a { color: var(--accent); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px 56px; }
+.doc { max-width: 760px; }
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+header.top .brand { font-weight: 700; font-size: 1.1em; color: var(--fg); text-decoration: none; }
+header.top nav a { margin-left: 16px; text-decoration: none; }
+h1 { font-size: 2em; line-height: 1.2; margin: 1.2em 0 0.3em; }
+h2 { font-size: 1.25em; margin: 1.8em 0 0.4em; }
+h3 { font-size: 1.05em; margin: 1.4em 0 0.3em; }
+.lead { font-size: 1.15em; color: var(--muted); margin-top: 0; }
+.updated { color: var(--muted); margin-top: 0; }
+li { margin: 0.3em 0; }
+.apps { display: grid; gap: 16px; margin-top: 32px; }
+.app { display: grid; grid-template-columns: 88px 1fr; gap: 20px; align-items: start; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; }
+.app img { width: 88px; height: 88px; border-radius: 22px; }
+.app h2 { margin: 0; }
+.app .tag { margin: 0.1em 0 0.6em; color: var(--muted); }
+.app p { margin: 0.4em 0; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 10px; }
+.toc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 20px; }
+footer.site { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95em; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 520px) { .app { grid-template-columns: 1fr; } .app img { width: 72px; height: 72px; border-radius: 18px; } }
