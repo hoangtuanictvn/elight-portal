@@ -1,7 +1,7 @@
 # Elight Labs portal
 
 Shared static website for all Elight Labs apps, deployed on Vercel from this repo
-(project `elight-studio`, https://elight-studio.vercel.app). The apps no longer keep their own web
+(project `elight-studio`, https://elightlabs.xyz). The apps no longer keep their own web
 folders: edit pages here.
 
 | Path | What |
