@@ -5,8 +5,7 @@
     { "source": "/elight-studio/privacy(.html)?", "destination": "/privacy-policy.html#elight-studio", "permanent": false },
     { "source": "/slomoly/privacy(.html)?", "destination": "/privacy-policy.html#slomoly", "permanent": false },
     { "source": "/rabese/privacy-en(.html)?", "destination": "/privacy-policy.html#rabese", "permanent": false },
-    { "source": "/rabese/privacy(.html)?", "destination": "/privacy-policy-vi.html#rabese", "permanent": false },
-    { "source": "/maneki-dict/privacy(.html)?", "destination": "/privacy-policy-vi.html#maneki-dict", "permanent": false }
+    { "source": "/rabese/privacy(.html)?", "destination": "/privacy-policy-vi.html#rabese", "permanent": false }
   ],
   "rewrites": [
     { "source": "/:app(slomoly|rabese|elight-studio|maneki-dict)/:page(support|support-en|terms|terms-en)", "destination": "/:app/:page.html" }

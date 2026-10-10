@@ -7,42 +7,69 @@
 <meta name="description" content="Maneki Dict: từ điển Nhật–Việt tra nhanh, hoạt động ngoại tuyến, có kanji, ví dụ, từ yêu thích và thẻ từ vựng. Không quảng cáo, không thu thập dữ liệu.">
 <link rel="icon" href="/assets/maneki-dict.png">
 <link rel="stylesheet" href="/assets/site.css">
+<style>
+.shots{display:flex;gap:14px;overflow-x:auto;padding:4px 0 12px;margin:18px 0}
+.shots figure{margin:0;flex:0 0 220px}
+.shots img{width:220px;height:auto;border-radius:14px;border:1px solid #e3e3e3;display:block}
+.shots figcaption{font-size:.9em;color:#666;margin-top:6px;text-align:center}
+.hero{display:flex;gap:18px;align-items:center}
+.hero img{border-radius:22px}
+</style>
 </head>
 <body>
 <div class="wrap doc">
 <header class="top">
     <a class="brand" href="/maneki-dict/">Maneki Dict</a>
-    <nav><a href="/maneki-dict/support.html">Hỗ trợ</a><a href="/maneki-dict/terms.html">Điều khoản</a><a href="/privacy-policy-vi.html#maneki-dict">Quyền riêng tư</a></nav>
+    <nav><a href="/maneki-dict/support.html">Hỗ trợ</a><a href="/maneki-dict/terms.html">Điều khoản</a></nav>
 </header>
 
-<p><img src="/assets/maneki-dict.png" alt="Biểu tượng Maneki Dict" width="96" height="96"></p>
-<h1>Maneki Dict</h1>
-<p class="lead">Từ điển Nhật–Việt tra nhanh, hoạt động hoàn toàn ngoại tuyến. Không quảng cáo, không
-theo dõi, không cần tài khoản.</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.deli.edu.quickdict">Tải trên Google Play</a> (Android 7.0 trở lên)</p>
+<div class="hero">
+    <img src="/assets/maneki-dict.png" alt="Biểu tượng Maneki Dict" width="96" height="96">
+    <div>
+        <h1>Maneki Dict</h1>
+        <p class="lead">Từ điển Nhật–Việt tra nhanh, chạy hoàn toàn ngoại tuyến.</p>
+    </div>
+</div>
+<p><a href="https://play.google.com/store/apps/details?id=com.deli.edu.quickdict">Tải miễn phí trên Google Play</a> · Android 7.0 trở lên · Không quảng cáo</p>
 
-<h2>Tính năng</h2>
+<div class="shots">
+    <figure><img src="/maneki-dict/assets/1_search.jpg" alt="Gợi ý từ khi gõ neko" loading="lazy"><figcaption>Gợi ý ngay khi gõ</figcaption></figure>
+    <figure><img src="/maneki-dict/assets/2_word.jpg" alt="Chi tiết từ 猫 với nghĩa, kanji và ví dụ" loading="lazy"><figcaption>Nghĩa, kanji và ví dụ</figcaption></figure>
+    <figure><img src="/maneki-dict/assets/3_cards.jpg" alt="Thẻ từ vựng Animals" loading="lazy"><figcaption>Thẻ từ vựng của bạn</figcaption></figure>
+</div>
+
+<h2>Tra từ thật nhanh</h2>
+<p>Gõ đến đâu, gợi ý hiện ra đến đó. Bạn có thể tìm bằng kanji, hiragana, katakana hoặc romaji (ví dụ
+"neko", "taberu"). Kết quả ưu tiên từ ngắn và sát với chữ bạn gõ, nhờ công nghệ tìm kiếm toàn văn
+(FTS) chạy ngay trên điện thoại.</p>
+
+<h2>Hiểu từ đầy đủ</h2>
 <ul>
-    <li>Gợi ý ngay khi gõ, tìm bằng kanji, kana hoặc romaji.</li>
-    <li>Nghĩa theo từ loại, thông tin kanji (âm Hán Việt, On, Kun) và câu ví dụ.</li>
-    <li>Lưu từ yêu thích và tạo thẻ từ vựng theo chủ đề.</li>
-    <li>Lịch sử tra gần đây, kèm widget trên màn hình chính.</li>
-    <li>Không cần Internet: toàn bộ từ điển có sẵn trong ứng dụng.</li>
+    <li><strong>Nghĩa tiếng Việt</strong> theo từng từ loại (danh từ, động từ, tính từ…).</li>
+    <li><strong>Kanji</strong> trong từ: âm Hán Việt, nghĩa, cách đọc On và Kun.</li>
+    <li><strong>Câu ví dụ</strong> tiếng Nhật kèm cách đọc kana và bản dịch tiếng Việt.</li>
 </ul>
 
-<h2>Quyền riêng tư</h2>
-<p>Mọi thứ bạn tra và lưu chỉ nằm trên điện thoại của bạn. Ứng dụng không có quảng cáo, không có
-analytics và không xin quyền Internet. Xem chi tiết trong
-<a href="/privacy-policy-vi.html#maneki-dict">chính sách quyền riêng tư</a>
-(<a href="/privacy-policy.html#maneki-dict">English</a>).</p>
+<h2>Học theo cách của bạn</h2>
+<ul>
+    <li><strong>Từ yêu thích</strong>: bấm trái tim để lưu những từ cần nhớ.</li>
+    <li><strong>Thẻ từ vựng</strong>: gom từ theo chủ đề (ví dụ "Động vật", "JLPT N4"), đổi tên, thêm
+        mô tả, xoá từ đã thuộc.</li>
+    <li><strong>Lịch sử tra</strong>: xem lại các từ vừa tra, kèm widget trên màn hình chính.</li>
+    <li><strong>Cá nhân hoá</strong>: đặt tên hiển thị, ảnh đại diện và số từ gợi ý (10 đến 50).</li>
+</ul>
+
+<h2>Không cần Internet</h2>
+<p>Toàn bộ dữ liệu từ điển có sẵn trong ứng dụng, nên bạn tra được ở mọi nơi, kể cả khi đi máy bay
+hay không có sóng. Ứng dụng không có quảng cáo và không cần tài khoản.</p>
 
 <h2>Liên hệ</h2>
-<p>Góp ý hoặc báo lỗi: <a href="mailto:hoangtuan.dev.deli.inc@gmail.com?subject=Maneki%20Dict">hoangtuan.dev.deli.inc@gmail.com</a>.
-Xem thêm trang <a href="/maneki-dict/support.html">hỗ trợ</a>.</p>
+<p>Góp ý hoặc báo lỗi: <a href="mailto:hoangtuan.dev.deli.inc@gmail.com?subject=Maneki%20Dict">hoangtuan.dev.deli.inc@gmail.com</a>,
+hoặc xem trang <a href="/maneki-dict/support.html">hỗ trợ</a>.</p>
 
 <footer class="site">
     <span>&copy; 2026 <a href="/">Elight Labs</a></span>
-    <span><a href="/maneki-dict/support.html">Hỗ trợ</a> · <a href="/maneki-dict/terms.html">Điều khoản</a> · <a href="/privacy-policy-vi.html#maneki-dict">Quyền riêng tư</a></span>
+    <span><a href="/maneki-dict/support.html">Hỗ trợ</a> · <a href="/maneki-dict/terms.html">Điều khoản</a> · <a href="/privacy-policy-vi.html">Quyền riêng tư</a></span>
 </footer>
 </div>
 </body>

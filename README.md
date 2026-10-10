@@ -13,7 +13,7 @@ folders: edit pages here.
 | `/elight-studio/` | Elight Studio site: `index`, `support` |
 | `/slomoly/` | Slomoly site: `index`, `support`, `terms` |
 | `/rabese/` | Rabese site (vi + en): `index`, `support(-en)`, `terms(-en)` |
-| `/maneki-dict/` | Maneki Dict (Japanese–Vietnamese dictionary, `com.deli.edu.quickdict`) site, Vietnamese: `index`, `support`, `terms` |
+| `/maneki-dict/` | Maneki Dict (Japanese–Vietnamese dictionary, `com.deli.edu.quickdict`) intro site, Vietnamese: `index` (app details and screenshots), `support`, `terms`; privacy lives only in the shared policy |
 | `/assets/` | Shared CSS and app icons |
 
 `vercel.json` redirects the old per-app privacy paths to the shared policy and serves
