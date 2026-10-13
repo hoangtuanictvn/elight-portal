@@ -22,4 +22,4 @@ folders: edit pages here.
 `/rabese/support` style URLs without `.html` (used inside the Rabese app).
 
 Adding an app: add a card to `index.html` linking to `/<app>/`, a section to both privacy policies,
-the `/<app>/` pages (store buttons, support and privacy links live there, not on the card), and its icon in `assets/`. An app on a different AdMob publisher ID needs its own line in `app-ads.txt` (Egg Island uses `pub-9484244355573484`).
+the `/<app>/` pages (store buttons, support and privacy links live there, not on the card), and its icon in `assets/`. All apps share AdMob publisher `pub-3969854058386286`, so `app-ads.txt` stays as is; an app on a different publisher would need its own line.
