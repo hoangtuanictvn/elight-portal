@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy – Elight Labs (Elight Studio, Slomoly, Rabese, Maneki Dict, Simple Reader)</title>
+<title>Privacy Policy – Elight Labs (Elight Studio, Slomoly, Rabese, Maneki Dict, Simple Reader, Egg Island)</title>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -24,24 +24,30 @@
     <li><a href="#rabese"><strong>Rabese</strong></a> (iPhone and Android)</li>
     <li><a href="#maneki-dict"><strong>Maneki Dict</strong></a> (Android)</li>
     <li><a href="#simple-reader"><strong>Simple Reader</strong></a> (Android)</li>
+    <li><a href="#egg-island"><strong>Egg Island</strong></a> (iPhone and Android)</li>
 </ul>
 <p>It explains what information each app handles, how it is used and shared, and the choices you
 have. Sections 1, 2 and 4–11 apply to all apps; section 3 describes each app.</p>
 
 <h2>1. Summary</h2>
 <ul>
-    <li>What you create (recordings, songs, videos, learning progress) stays on your device. We run
-        no servers that receive it.</li>
-    <li>Our apps have no user accounts and no analytics.</li>
+    <li>What you create (recordings, songs, videos, learning progress, game progress) stays on your
+        device. We run no servers that receive it.</li>
+    <li>Egg Island is the one exception to the next two points: it has an online leaderboard, uses
+        Firebase analytics and crash reports, offers in-app purchases, and on iPhone asks for your
+        permission to track. Its section below lists exactly what it sends.</li>
+    <li>Our other apps have no user accounts and no analytics.</li>
     <li>We do not collect personal information such as your name, email address, phone number,
-        contacts or location.</li>
-    <li>The Android versions of Elight Studio, Slomoly and Rabese show ads from Google AdMob. Google
-        collects some device information to show and measure ads, as described in section 4. Maneki
-        Dict, Simple Reader and the iPhone versions of Slomoly and Rabese show no ads.</li>
+        contacts or location. The only thing you type that leaves your device is the Egg Island
+        leaderboard name you choose.</li>
+    <li>Egg Island (iPhone and Android) and the Android versions of Elight Studio, Slomoly and Rabese
+        show ads from Google AdMob. Google collects some device information to show and measure ads,
+        as described in section 4. Maneki Dict, Simple Reader and the iPhone versions of Slomoly and
+        Rabese show no ads.</li>
 </ul>
 
 <h2>2. Information we collect</h2>
-<p>We do not collect personal information. Content and settings are stored only on your device, in
+<p>Apart from what Egg Island sends (section 3), we do not collect personal information. Content and settings are stored only on your device, in
 each app's private storage or in folders you can see (such as your music, movies or photos). You
 can delete them in the app, with your device's file or photo manager, or by uninstalling the app.
 If you choose to share a file with another app (for example a messaging app), that app's privacy
@@ -155,12 +161,46 @@ policy applies.</p>
         Facebook app. Nothing is sent unless you send it yourself.</li>
 </ul>
 
-<h2 id="advertising">4. Advertising (Google AdMob)</h2>
-<p>This section applies to Elight Studio, Slomoly and Rabese for Android. We do not collect data for ads
-ourselves. To show, limit and measure ads and to prevent fraud, Google's Mobile Ads SDK collects and
-processes:</p>
+<h3 id="egg-island">Egg Island (iPhone and Android)</h3>
 <ul>
-    <li>your device's advertising ID,</li>
+    <li><strong>On-device data</strong>: game progress, in-game currency, pets, quests and settings are
+        stored on your device. We keep no server backup, so clearing the app's data or uninstalling it
+        removes them for good.</li>
+    <li><strong>Leaderboard</strong>: the game signs in anonymously (no email, phone or password) and
+        sends a random player ID, the display name you choose, your scores and technical data about
+        each run to our leaderboard database, hosted by Supabase. Other players can see your display
+        name and scores. The data is used to show rankings, check scores and limit cheating. Delete it
+        in <strong>Settings → Privacy → Leaderboard data</strong>, or see the
+        <a href="/egg-island/delete-data.html">data deletion page</a>.</li>
+    <li><strong>Analytics and crash reports</strong>: Firebase Analytics records how the game is
+        played (runs and scores, screens visited, pet upgrades, tutorial steps, ad and purchase events)
+        under an ID that Firebase generates, plus a few grouped profile values such as the range of
+        runs played. Firebase Crashlytics sends crash reports. These never include your display name,
+        email, phone number or precise location. On iPhone they are sent only if you allow tracking
+        (next point).</li>
+    <li><strong>Tracking on iPhone</strong>: after the ad consent step, the game shows Apple's App
+        Tracking Transparency prompt. If you choose <em>Allow</em>, AdMob may use your advertising
+        identifier (IDFA) to show personalized ads, and Google may link your game activity with data
+        from other companies' apps and websites (Google signals). If you choose <em>Ask App Not to
+        Track</em>, the IDFA is not used, ads are not personalized, and analytics and crash reports
+        are turned off. You can change this at any time in iOS Settings → Privacy &amp; Security →
+        Tracking.</li>
+    <li><strong>Ads</strong>: optional rewarded ads you choose to watch for in-game rewards, and
+        full-screen ads between runs, from Google AdMob. Where the law requires it, you are asked for
+        consent first and can change your choice in <strong>Settings → Privacy → Ad privacy
+        options</strong>. See section 4.</li>
+    <li><strong>Purchases</strong>: optional diamond packs. Apple or Google handles the payment;
+        RevenueCat receives the purchase receipt and an anonymous purchaser ID so the diamonds can be
+        delivered. We never see your card details or store account.</li>
+    <li><strong>Age</strong>: Egg Island is meant for players aged 13 and older.</li>
+</ul>
+
+<h2 id="advertising">4. Advertising (Google AdMob)</h2>
+<p>This section applies to Egg Island (iPhone and Android) and to Elight Studio, Slomoly and Rabese for
+Android. We do not collect data for ads ourselves. To show, limit and measure ads and to prevent fraud,
+Google's Mobile Ads SDK collects and processes:</p>
+<ul>
+    <li>your device's advertising ID (on iPhone, only if you allow tracking in Egg Island),</li>
     <li>your IP address and the approximate location derived from it,</li>
     <li>device information (model, operating system, language, network type) and app
         information,</li>
@@ -182,6 +222,11 @@ processes:</p>
     <li><strong>Advertising ID.</strong> On Android you can reset or delete your advertising ID in
         your device settings (Settings, Google, Ads, or Settings, Privacy, Ads). Without it, ads are
         not personalized.</li>
+    <li><strong>Tracking on iPhone.</strong> Egg Island asks before tracking. You can change your
+        answer at any time in iOS Settings → Privacy &amp; Security → Tracking, or turn off
+        <em>Allow Apps to Request to Track</em> for all apps.</li>
+    <li><strong>Egg Island leaderboard.</strong> Delete your player ID, display name and scores in
+        Settings → Privacy → Leaderboard data, or by email (section 11).</li>
     <li><strong>Opt-out tools.</strong> You can also manage interest-based advertising at
         <a href="https://adssettings.google.com">adssettings.google.com</a> and
         <a href="https://youradchoices.com">youradchoices.com</a>.</li>
@@ -200,13 +245,15 @@ information from children. If you believe a child has provided personal informat
 our apps, please contact us and we will help remove it.</p>
 
 <h2>8. Security</h2>
-<p>Your content stays on your device and is protected by your device's security. Data that Google's
-SDK sends for advertising is encrypted in transit.</p>
+<p>Your content stays on your device and is protected by your device's security. Data sent for
+advertising, analytics, the Egg Island leaderboard and purchases is encrypted in transit. These
+providers may process data outside your country under their own data protection safeguards.</p>
 
 <h2>9. Legal requirements</h2>
 <p>We may disclose information if required by law, to respond to legal process, to protect our
-rights or property, or to investigate fraud, illegal activity or threats to anyone's safety. As we
-do not collect personal information or your content, we generally have nothing to disclose.</p>
+rights or property, or to investigate fraud, illegal activity or threats to anyone's safety. Apart
+from Egg Island leaderboard records, we do not hold personal information or your content, so we
+generally have nothing to disclose.</p>
 
 <h2>10. Changes to this policy</h2>
 <p>If an app starts handling data differently, this page will be updated before that version is
