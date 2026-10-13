@@ -8,12 +8,13 @@ folders: edit pages here.
 | --- | --- |
 | `/` | Elight Labs landing page: one card per app, each linking only to the app's own page |
 | `/app-ads.txt` | AdMob authorized sellers, must stay at the domain root |
-| `/privacy-policy.html` | Shared privacy policy for all apps (anchors `#elight-studio`, `#slomoly`, `#rabese`, `#maneki-dict`); linked from Google Play, App Store and AdMob |
+| `/privacy-policy.html` | Shared privacy policy for all apps (anchors `#elight-studio`, `#slomoly`, `#rabese`, `#maneki-dict`, `#simple-reader`); linked from Google Play, App Store and AdMob |
 | `/privacy-policy-vi.html` | Vietnamese version |
 | `/elight-studio/` | Elight Studio site: `index`, `support` |
 | `/slomoly/` | Slomoly site: `index`, `support`, `terms` |
 | `/rabese/` | Rabese site (vi + en): `index`, `support(-en)`, `terms(-en)` |
 | `/maneki-dict/` | Maneki Dict (Japanese–Vietnamese dictionary, `com.deli.edu.quickdict`) intro site, Vietnamese: `index` (app details and screenshots), `support`, `terms`; privacy lives only in the shared policy |
+| `/simple-reader/` | Simple Reader (PDF/DjVu reader, `com.delight.ereader`) site, English: `index`, `support`; privacy lives only in the shared policy |
 | `/assets/` | Shared CSS and app icons |
 
 `vercel.json` redirects the old per-app privacy paths to the shared policy and serves

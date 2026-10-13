@@ -8,7 +8,7 @@
     { "source": "/rabese/privacy(.html)?", "destination": "/privacy-policy-vi.html#rabese", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/:app(slomoly|rabese|elight-studio|maneki-dict)/:page(support|support-en|terms|terms-en)", "destination": "/:app/:page.html" }
+    { "source": "/:app(slomoly|rabese|elight-studio|maneki-dict|simple-reader)/:page(support|support-en|terms|terms-en)", "destination": "/:app/:page.html" }
   ],
   "headers": [
     {
