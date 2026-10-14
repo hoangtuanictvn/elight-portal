@@ -3,51 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support – Simple Reader</title>
+<title>Support | Simple Reader</title>
 <meta name="description" content="Frequently asked questions and support contact for Simple Reader.">
 <link rel="icon" href="/assets/simple-reader.png">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" hreflang="en" href="/simple-reader/support.html">
+<link rel="alternate" hreflang="vi" href="/simple-reader/support-vi.html">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
 </head>
 <body>
-<div class="wrap doc">
-<header class="top">
-    <a class="brand" href="/simple-reader/">Simple Reader</a>
-    <nav><a href="/simple-reader/support.html">Support</a><a href="/privacy-policy.html#simple-reader">Privacy</a></nav>
+
+<header class="nav">
+    <div class="container">
+        <div class="crumbs">
+            <a class="brand" href="/"><img class="brand-mark" src="/assets/brand/mark.svg" alt="" width="28" height="28"><span class="brand-name">Elight Labs</span></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="app-crumb" href="/simple-reader/"><img src="/assets/simple-reader.png" alt="" width="26" height="26">Simple Reader</a>
+        </div>
+        <nav aria-label="Main">
+            <a href="/simple-reader/#features">Features</a>
+            <a href="/simple-reader/support.html" aria-current="page" data-keep>Support</a>
+            <a href="/privacy-policy.html#simple-reader">Privacy</a>
+            <a class="lang" href="/simple-reader/support-vi.html" data-keep>Tiếng Việt</a>
+        </nav>
+    </div>
 </header>
 
-<h1>Support</h1>
-
+<main class="container doc-layout single">
+    <div class="doc-head">
+        <a class="doc-app" href="/simple-reader/"><img src="/assets/simple-reader.png" alt="" width="36" height="36">Simple Reader</a>
+        <h1>Support</h1>
+    </div>
+    <article class="doc">
 <h2>Frequently asked questions</h2>
-<h3>How do I open a book?</h3>
+<details>
+<summary>How do I open a book?</summary>
 <p>Tap the folder button on the home screen and pick a file in the Android file picker. You can also
 open a PDF or DjVu file from your file manager, browser downloads or a messaging app with "Open with"
 or "Share" and choose Simple Reader.</p>
-<h3>Why doesn't the app find my books automatically?</h3>
+</details>
+<details>
+<summary>Why doesn't the app find my books automatically?</summary>
 <p>Android 11 and later no longer let apps scan all files on your phone without broad storage access.
 Simple Reader only opens the files you choose, so it needs no storage permission. Every book you open
 stays on the recent shelf.</p>
-<h3>Where are my books stored?</h3>
+</details>
+<details>
+<summary>Where are my books stored?</summary>
 <p>Books you open are copied into the app's own storage
 (<code>Android/data/com.delight.ereader/files/Books</code>), so they reopen instantly and keep your
 last page. Your original file is not changed. To free space, long-press a book on the shelf and choose
 File operations → Delete book.</p>
-<h3>How do I read in the dark?</h3>
+</details>
+<details>
+<summary>How do I read in the dark?</summary>
 <p>While reading, open the menu and turn on Day/Night. Night mode shows white text on a black
 background.</p>
-<h3>The pages have wide white margins. Can I remove them?</h3>
+</details>
+<details>
+<summary>The pages have wide white margins. Can I remove them?</summary>
 <p>Turn on "Crop pages (auto)" in the reading menu, or use Manual crop to set the margins yourself.
 "Split pages" shows the two halves of a scanned double page one after the other.</p>
-<h3>Which formats are supported?</h3>
+</details>
+<details>
+<summary>Which formats are supported?</summary>
 <p>PDF, XPS/OXPS, DjVu, CBZ and FB2 (also .fb2.zip). EPUB and Word documents are not supported.</p>
+</details>
 
 <h2>Contact</h2>
 <p>Email <a href="mailto:hoangtuan.dev.deli.inc@gmail.com?subject=Simple%20Reader%20support">hoangtuan.dev.deli.inc@gmail.com</a>,
 or use "Send feedback" in the app menu. We usually reply within two business days.</p>
+    </article>
+</main>
 
-<footer class="site">
-    <span>&copy; 2026 <a href="/">Elight Labs</a></span>
-    <span><a href="/simple-reader/support.html">Support</a> · <a href="/privacy-policy.html#simple-reader">Privacy</a></span>
+<footer class="footer">
+    <div class="container">
+        <span>&copy; 2026 <a href="/">Elight Labs</a></span>
+        <nav aria-label="Footer">
+            <a href="/simple-reader/">Simple Reader</a>
+            <a href="/simple-reader/support.html">Support</a>
+            <a href="/privacy-policy.html#simple-reader">Privacy</a>
+        </nav>
+    </div>
 </footer>
-</div>
 </body>
 </html>

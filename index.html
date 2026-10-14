@@ -3,97 +3,203 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elight Labs – Small apps that respect your privacy</title>
+<title>Elight Labs | Small apps that respect your privacy</title>
 <meta name="description" content="Elight Labs makes Elight Studio, Slomoly, Rabese, Maneki Dict, Simple Reader and Egg Island: focused mobile apps that keep your content on your device.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0e10" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Elight Labs">
+<meta property="og:description" content="Focused mobile apps for music, video, reading, language learning and play.">
+<meta property="og:url" content="https://elightlabs.xyz/">
+<link rel="alternate" hreflang="en" href="/">
+<link rel="alternate" hreflang="vi" href="/index-vi.html">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/slomoly/assets/01_editor_curve.jpg" as="image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image" content="https://elightlabs.xyz/assets/brand/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/home.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/assets/site.js" defer></script>
 </head>
 <body>
-<div class="wrap">
-<header class="top">
-    <a class="brand" href="/">Elight Labs</a>
-    <nav><a href="#apps">Apps</a><a href="/privacy-policy.html">Privacy</a><a href="#contact">Contact</a></nav>
+
+<header class="nav">
+    <div class="container">
+        <a class="brand" href="/"><img class="brand-mark" src="/assets/brand/mark.svg" alt="" width="28" height="28">Elight Labs</a>
+        <nav aria-label="Main">
+            <a href="#apps">Apps</a>
+            <a href="#principles">How we work</a>
+            <a href="/privacy-policy.html">Privacy</a>
+            <a href="#contact">Contact</a>
+            <a class="lang" href="/index-vi.html" data-keep>Tiếng Việt</a>
+        </nav>
+    </div>
 </header>
 
-<h1>Small, focused apps.<br>Your content stays on your phone.</h1>
-<p class="lead">Elight Labs is an independent studio making apps for music, video, reading, language
-learning and play. Nothing you create is uploaded, and our tools have no accounts and no analytics.</p>
-
-<section class="apps" id="apps">
-    <a class="app" id="elight-studio" href="/elight-studio/">
-        <img src="/assets/elight-studio.png" alt="Elight Studio app icon">
-        <div>
-            <h2>Elight Studio</h2>
-            <p class="tag">Music maker, multitrack recorder and audio editor · Android</p>
-            <p>Record vocals on multiple tracks, make beats with drum pads, play synths and piano with a
-            MIDI keyboard, and mix with effects. Also cuts, joins and converts audio and makes ringtones.</p>
-            <p class="more">Learn more →</p>
+<main>
+<section class="hero">
+    <div class="container">
+        <div class="hero-copy">
+            <h1>Mobile apps that do <em>one thing</em> well.</h1>
+            <p class="sub">Elight Labs is an independent studio making apps for music, video, reading,
+            language learning and play.</p>
+            <div class="ctas">
+                <a class="btn btn-primary" href="#apps">See the apps <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="btn btn-ghost" href="#contact">Contact</a>
+            </div>
         </div>
-    </a>
-
-    <a class="app" id="slomoly" href="/slomoly/">
-        <img src="/assets/slomoly.png" alt="Slomoly app icon">
-        <div>
-            <h2>Slomoly</h2>
-            <p class="tag">Slow motion video and speed ramp editor · iPhone and Android</p>
-            <p>Shape time in any video. Ramp from full speed to 1/8x and back with one drag, or record
-            true slow motion at up to 240 fps.</p>
-            <p class="more">Learn more →</p>
+        <div class="phones" aria-hidden="true">
+            <figure class="phone phone-1"><img src="/elight-studio/assets/1_studio.jpg" alt="" width="660" height="1402"></figure>
+            <figure class="phone phone-2"><img src="/slomoly/assets/01_editor_curve.jpg" alt="" width="660" height="1434" fetchpriority="high"></figure>
+            <figure class="phone phone-3"><img src="/rabese/assets/03_flashcard.jpg" alt="" width="660" height="1320"></figure>
         </div>
-    </a>
-
-    <a class="app" id="rabese" href="/rabese/">
-        <img src="/assets/rabese.png" alt="Rabese app icon">
-        <div>
-            <h2>Rabese</h2>
-            <p class="tag">Learn Chinese, HSK 1–7 · iPhone and Android</p>
-            <p>64,000+ Chinese sentences with pinyin, Vietnamese and English translations, and
-            pronunciation audio, in six natural learning stages. Free; the Android version is supported by ads.</p>
-            <p class="more">Learn more →</p>
-        </div>
-    </a>
-
-    <a class="app" id="maneki-dict" href="/maneki-dict/">
-        <img src="/assets/maneki-dict.png" alt="Maneki Dict app icon">
-        <div>
-            <h2>Maneki Dict</h2>
-            <p class="tag">Japanese–Vietnamese dictionary · Android</p>
-            <p>Fast offline Japanese–Vietnamese dictionary with kanji details, example sentences,
-            favorites and vocabulary cards. Works without internet. No ads, no tracking.</p>
-            <p class="more">Learn more →</p>
-        </div>
-    </a>
-    <a class="app" id="simple-reader" href="/simple-reader/">
-        <img src="/assets/simple-reader.png" alt="Simple Reader app icon">
-        <div>
-            <h2>Simple Reader</h2>
-            <p class="tag">PDF reader and DjVu viewer · Android</p>
-            <p>A small, fast reader for PDF, DjVu, XPS, CBZ comics and FB2 e-books, with night mode,
-            margin cropping, bookmarks and text search. Works offline. No ads, no tracking.</p>
-            <p class="more">Learn more →</p>
-        </div>
-    </a>
-
-    <a class="app" id="egg-island" href="/egg-island/">
-        <img src="/assets/egg-island.png" alt="Egg Island app icon">
-        <div>
-            <h2>Egg Island</h2>
-            <p class="tag">Merge eggs and hatch pets · iPhone and Android</p>
-            <p>A cozy physics puzzle: drop eggs, merge them through 12 tiers, and raise the cute pets that
-            hatch. Daily quests and a world leaderboard. Free, supported by ads and optional purchases.</p>
-            <p class="more">Learn more →</p>
-        </div>
-    </a>
+    </div>
 </section>
 
-<h2 id="contact">Contact</h2>
-<p>Questions, feedback or bug reports for any of our apps:
-<a href="mailto:hoangtuan.dev.deli.inc@gmail.com">hoangtuan.dev.deli.inc@gmail.com</a>.
-We usually reply within two business days.</p>
-
-<footer class="site">
-    <span>&copy; 2026 Elight Labs</span>
-    <span><a href="/privacy-policy.html">Privacy Policy</a> · <a href="/privacy-policy-vi.html">Chính sách quyền riêng tư</a></span>
-</footer>
+<div class="facts">
+    <div class="container">
+        <div class="fact"><strong>6 apps</strong><span>and counting</span></div>
+        <div class="fact"><strong>iPhone and Android</strong><span>three of our apps run on both</span></div>
+        <div class="fact"><strong>English and Vietnamese</strong><span>for our sites and support</span></div>
+        <div class="icons" aria-hidden="true">
+            <img src="/assets/elight-studio.png" alt="" width="44" height="44">
+            <img src="/assets/slomoly.png" alt="" width="44" height="44">
+            <img src="/assets/rabese.png" alt="" width="44" height="44">
+            <img src="/assets/maneki-dict.png" alt="" width="44" height="44">
+            <img src="/assets/simple-reader.png" alt="" width="44" height="44">
+            <img src="/assets/egg-island.png" alt="" width="44" height="44">
+        </div>
+    </div>
 </div>
+
+<section class="section" id="apps">
+    <div class="container">
+        <h2 class="reveal">Our apps</h2>
+        <p class="intro reveal">Each one is small on purpose. Tap an app to see screenshots, store links and support.</p>
+
+        <div class="bento">
+            <a class="tile t-studio reveal" id="elight-studio" href="/elight-studio/">
+                <div class="tile-text">
+                    <img class="tile-icon" src="/assets/elight-studio.png" alt="" width="56" height="56">
+                    <h3>Elight Studio</h3>
+                    <p class="meta">Music maker and audio editor · Android</p>
+                    <p>Record vocals on multiple tracks, make beats with drum pads, play synths and piano, and
+                    mix with effects. Also cuts, joins and converts audio.</p>
+                </div>
+                <span class="more">Learn more <span aria-hidden="true">→</span></span>
+                <figure class="tile-shot"><img src="/elight-studio/assets/3_drums.jpg" alt="Elight Studio drum pads screen" width="660" height="1402" loading="lazy"></figure>
+            </a>
+
+            <a class="tile t-slomoly reveal" id="slomoly" href="/slomoly/" style="--d:.08s">
+                <div class="tile-text">
+                    <img class="tile-icon" src="/assets/slomoly.png" alt="" width="56" height="56">
+                    <h3>Slomoly</h3>
+                    <p class="meta">Slow motion and speed ramps · iPhone and Android</p>
+                    <p>Ramp from full speed to 1/8x and back with one drag, or record true slow motion at up to 240 fps.</p>
+                </div>
+                <span class="more">Learn more <span aria-hidden="true">→</span></span>
+                <figure class="tile-shot"><img src="/slomoly/assets/02_presets.jpg" alt="Slomoly speed presets screen" width="660" height="1434" loading="lazy"></figure>
+            </a>
+
+            <a class="tile t-egg reveal" id="egg-island" href="/egg-island/">
+                <div class="tile-text">
+                    <img class="tile-icon" src="/assets/egg-island.png" alt="" width="56" height="56">
+                    <h3>Egg Island</h3>
+                    <p class="meta">Merge puzzle game · iPhone and Android</p>
+                    <p>Drop eggs, merge them through 12 tiers and raise the pets that hatch. Daily quests and a world leaderboard.</p>
+                </div>
+                <span class="more">Learn more <span aria-hidden="true">→</span></span>
+                <img class="egg-art" src="/assets/egg-island.png" alt="" width="256" height="256" loading="lazy">
+            </a>
+
+            <a class="tile t-maneki reveal" id="maneki-dict" href="/maneki-dict/" style="--d:.08s">
+                <div class="tile-text">
+                    <img class="tile-icon" src="/assets/maneki-dict.png" alt="" width="56" height="56">
+                    <h3>Maneki Dict</h3>
+                    <p class="meta">Japanese-Vietnamese dictionary · Android</p>
+                    <p>A fast offline dictionary with kanji details, example sentences, favorites and
+                    vocabulary cards. No ads, no tracking.</p>
+                </div>
+                <span class="more">Learn more <span aria-hidden="true">→</span></span>
+                <figure class="tile-shot"><img src="/maneki-dict/assets/1_search.jpg" alt="Maneki Dict search screen" width="404" height="834" loading="lazy"></figure>
+            </a>
+
+            <a class="tile t-rabese reveal" id="rabese" href="/rabese/">
+                <img class="tile-icon" src="/assets/rabese.png" alt="" width="88" height="88">
+                <div class="tile-text">
+                    <h3>Rabese</h3>
+                    <p class="meta">Learn Chinese, HSK 1-7 · iPhone and Android</p>
+                    <p>64,000+ sentences with pinyin, Vietnamese and English translations, and pronunciation audio.</p>
+                </div>
+                <span class="more">Learn more <span aria-hidden="true">→</span></span>
+            </a>
+
+            <a class="tile t-reader reveal" id="simple-reader" href="/simple-reader/" style="--d:.08s">
+                <img class="tile-icon" src="/assets/simple-reader.png" alt="" width="88" height="88">
+                <div class="tile-text">
+                    <h3>Simple Reader</h3>
+                    <p class="meta">PDF and DjVu reader · Android</p>
+                    <p>Reads PDF, DjVu, XPS, CBZ and FB2 with night mode, margin cropping and search. No ads, no tracking.</p>
+                </div>
+                <span class="more">Learn more <span aria-hidden="true">→</span></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section principles" id="principles">
+    <div class="container">
+        <div class="lead-col reveal">
+            <h2>How we make apps</h2>
+            <p>A few rules every Elight Labs app follows, from the first build to every update.</p>
+        </div>
+        <div class="rules">
+            <div class="rule reveal">
+                <h3>Your content stays on your phone</h3>
+                <p>Recordings, videos and documents are processed on the device. Nothing you create is uploaded.</p>
+            </div>
+            <div class="rule reveal" style="--d:.08s">
+                <h3>No sign-up to get started</h3>
+                <p>Our tools have no accounts and no analytics. Open the app and start working.</p>
+            </div>
+            <div class="rule reveal">
+                <h3>Works without a connection</h3>
+                <p>The dictionary, the reader and the editors keep working offline.</p>
+            </div>
+            <div class="rule reveal" style="--d:.08s">
+                <h3>Clear about ads</h3>
+                <p>Some apps are free with ads. Our <a href="/privacy-policy.html#advertising">privacy policy</a> says which ones and what that means.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="panel reveal">
+            <div>
+                <h2>Questions, feedback or a bug to report?</h2>
+                <p>Write to us about any of our apps. We usually reply within two business days.</p>
+                <a class="mail" href="mailto:hoangtuan.dev.deli.inc@gmail.com">hoangtuan.dev.deli.inc@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <span>&copy; 2026 Elight Labs</span>
+        <nav aria-label="Legal">
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/privacy-policy-vi.html">Chính sách quyền riêng tư</a>
+            <a href="/brand/">Brand</a>
+        </nav>
+    </div>
+</footer>
+
 </body>
 </html>

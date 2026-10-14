@@ -8,7 +8,7 @@
     { "source": "/rabese/privacy(.html)?", "destination": "/privacy-policy-vi.html#rabese", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/:app(slomoly|rabese|elight-studio|maneki-dict|simple-reader)/:page(support|support-en|terms|terms-en)", "destination": "/:app/:page.html" },
+    { "source": "/:app(slomoly|rabese|elight-studio|maneki-dict|simple-reader)/:page(support|support-en|support-vi|terms|terms-en|terms-vi|index-vi)", "destination": "/:app/:page.html" },
     { "source": "/egg-island/:page(support|support-vi|terms|terms-vi|delete-data|delete-data-vi|index-vi)", "destination": "/egg-island/:page.html" }
   ],
   "headers": [

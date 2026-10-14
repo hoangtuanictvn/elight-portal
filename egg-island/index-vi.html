@@ -3,58 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Egg Island: Ghép Trứng – Elight Labs</title>
+<title>Egg Island: Ghép Trứng | Elight Labs</title>
 <meta name="description" content="Thả trứng, ghép thành trứng lớn hơn và nuôi những thú cưng đáng yêu nở ra. Trò chơi giải đố vật lý nhẹ nhàng cho iPhone và Android.">
 <link rel="icon" href="/assets/egg-island.png">
 <link rel="apple-touch-icon" href="/assets/egg-island.png">
+<meta name="color-scheme" content="light dark">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="alternate" hreflang="en" href="/egg-island/">
+<link rel="alternate" hreflang="vi" href="/egg-island/index-vi.html">
 <link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/assets/site.js" defer></script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 </head>
 <body>
-<div class="wrap doc">
-<header class="top">
-    <a class="brand" href="/">Elight Labs</a>
-    <nav><a href="/egg-island/support-vi.html">Hỗ trợ</a><a href="/privacy-policy-vi.html#egg-island">Quyền riêng tư</a><a href="/egg-island/terms-vi.html">Điều khoản</a><a href="/egg-island/">English</a></nav>
+
+<header class="nav">
+    <div class="container">
+        <div class="crumbs">
+            <a class="brand" href="/index-vi.html"><img class="brand-mark" src="/assets/brand/mark.svg" alt="" width="28" height="28"><span class="brand-name">Elight Labs</span></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="app-crumb" href="/egg-island/index-vi.html"><img src="/assets/egg-island.png" alt="" width="26" height="26">Egg Island</a>
+        </div>
+        <nav aria-label="Chính">
+            <a href="#features">Tính năng</a>
+            <a href="/egg-island/support-vi.html" data-keep>Hỗ trợ</a>
+            <a href="/privacy-policy-vi.html#egg-island">Quyền riêng tư</a>
+            <a href="/egg-island/terms-vi.html">Điều khoản</a>
+            <a class="lang" href="/egg-island/" data-keep>English</a>
+        </nav>
+    </div>
 </header>
 
-<div class="app" style="margin-top:32px">
-    <img src="/assets/egg-island.png" alt="Biểu tượng Egg Island">
-    <div>
-        <h1 style="margin:0">Egg Island: Ghép Trứng</h1>
-        <p class="tag">Giải đố ghép trứng vật lý · iPhone và Android</p>
+<main>
+<section class="app-hero">
+    <div class="container">
+        <div>
+            <div class="app-id rise">
+                <img src="/assets/egg-island.png" alt="Biểu tượng Egg Island" width="64" height="64">
+                <div><strong>Egg Island</strong><span>Giải đố ghép trứng vật lý · iPhone và Android</span></div>
+            </div>
+            <h1 class="rise" style="--d:.06s">Egg Island: Ghép Trứng</h1>
+            <p class="lead rise" style="--d:.12s">Thả trứng vào giỏ, ghép những quả trứng giống nhau thành quả lớn
+            hơn và nuôi lớn những thú cưng đáng yêu nở ra từ trứng.</p>
+            <div class="stores rise" style="--d:.18s">
+                <a class="btn btn-primary" href="#features">Cách chơi <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="btn btn-ghost" href="/egg-island/support-vi.html">Hỗ trợ</a>
+            </div>
+        </div>
+        <div class="hero-visual rise" style="--d:.15s">
+            <div class="hero-art"><img src="/assets/egg-island.png" alt="" width="256" height="256" fetchpriority="high"></div>
+        </div>
     </div>
-</div>
+</section>
 
-<p class="lead" style="margin-top:24px">Thả trứng vào giỏ, ghép những quả trứng giống nhau thành quả lớn
-hơn và nuôi lớn những thú cưng đáng yêu nở ra từ trứng.</p>
+<section class="section" id="features">
+    <div class="container">
+        <h2 class="reveal">Thả, ghép, nở.</h2>
+        <div class="features">
+            <div class="feature reveal">
+                <i class="ph ph-egg" aria-hidden="true"></i>
+                <h3>Cách chơi</h3>
+                <p>Khi hai quả trứng cùng loại chạm nhau, chúng nhập lại thành một quả lớn hơn. Cứ ghép tiếp để leo đủ 12
+                bậc trứng. Nếu để giỏ tràn, lượt chơi kết thúc, vì vậy hãy cân nhắc từng lần thả.</p>
+            </div>
+            <div class="feature reveal" style="--d:.08s">
+                <i class="ph ph-paw-print" aria-hidden="true"></i>
+                <h3>Thú cưng đồng hành</h3>
+                <p>Một thú cưng đi lại dưới giỏ, nhặt vàng, đá quý và thức ăn rơi ra sau mỗi lần ghép, và nạp đầy thanh năng
+                lượng khi bạn cho ăn. Thanh đầy sẽ mở một kỹ năng giúp dọn bàn chơi những lúc bí nước. Có ba thú cưng để
+                nuôi, mỗi bé đều lên cấp, tiến hoá và mở kỹ năng mới.</p>
+            </div>
+            <div class="feature reveal">
+                <i class="ph ph-trophy" aria-hidden="true"></i>
+                <h3>Nhiều hoạt động khác</h3>
+                <ul>
+                    <li>Nhiệm vụ và phần thưởng hằng ngày</li>
+                    <li>Bảng xếp hạng thế giới theo điểm cao và cấp thú cưng</li>
+                    <li>Lượt chơi được lưu khi bạn thoát ứng dụng</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-<h2>Cách chơi</h2>
-<p>Khi hai quả trứng cùng loại chạm nhau, chúng nhập lại thành một quả lớn hơn. Cứ ghép tiếp để leo đủ 12
-bậc trứng. Nếu để giỏ tràn, lượt chơi kết thúc, vì vậy hãy cân nhắc từng lần thả.</p>
+<section class="section" id="help">
+    <div class="container">
+        <div class="panel reveal">
+            <h2>Quyền riêng tư và hỗ trợ</h2>
+            <div class="stores">
+                <a class="btn btn-ghost" href="/privacy-policy-vi.html#egg-island">Chính sách quyền riêng tư</a>
+                <a class="btn btn-ghost" href="/egg-island/terms-vi.html">Điều khoản sử dụng</a>
+                <a class="btn btn-ghost" href="/egg-island/support-vi.html">Hỗ trợ</a>
+                <a class="btn btn-ghost" href="/egg-island/delete-data-vi.html">Xoá dữ liệu</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
 
-<h2>Thú cưng đồng hành</h2>
-<p>Một thú cưng đi lại dưới giỏ, nhặt vàng, đá quý và thức ăn rơi ra sau mỗi lần ghép, và nạp đầy thanh năng
-lượng khi bạn cho ăn. Thanh đầy sẽ mở một kỹ năng giúp dọn bàn chơi những lúc bí nước. Có ba thú cưng để
-nuôi, mỗi bé đều lên cấp, tiến hoá và mở kỹ năng mới.</p>
-
-<h2>Nhiều hoạt động khác</h2>
-<ul>
-    <li>Nhiệm vụ và phần thưởng hằng ngày</li>
-    <li>Bảng xếp hạng thế giới theo điểm cao và cấp thú cưng</li>
-    <li>Lượt chơi được lưu khi bạn thoát ứng dụng</li>
-</ul>
-
-<h2>Quyền riêng tư và hỗ trợ</h2>
-<div class="links">
-    <a href="/privacy-policy-vi.html#egg-island">Chính sách quyền riêng tư</a>
-    <a href="/egg-island/terms-vi.html">Điều khoản sử dụng</a>
-    <a href="/egg-island/support-vi.html">Hỗ trợ</a>
-    <a href="/egg-island/delete-data-vi.html">Xoá dữ liệu</a>
-</div>
-
-<footer class="site">
-    <span>&copy; 2026 Elight Labs</span>
-    <span><a href="/">Trang chủ</a> · <a href="/egg-island/">English</a></span>
+<footer class="footer">
+    <div class="container">
+        <span>&copy; 2026 <a href="/index-vi.html">Elight Labs</a></span>
+        <nav aria-label="Chân trang">
+            <a href="/index-vi.html">Trang chủ</a>
+            <a href="/egg-island/support-vi.html">Hỗ trợ</a>
+            <a href="/egg-island/terms-vi.html">Điều khoản</a>
+            <a href="/privacy-policy-vi.html#egg-island">Quyền riêng tư</a>
+            <a href="/egg-island/">English</a>
+        </nav>
+    </div>
 </footer>
-</div>
 </body>
 </html>

@@ -1,116 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Elight Studio: Music Maker, Multitrack Recorder and Audio Editor for Android</title>
 <meta name="description" content="Record vocals on many tracks, make beats on drum pads, play synths with a MIDI keyboard and mix with effects. Plus an MP3 cutter and converter. Works offline.">
-<meta name="theme-color" content="#0b0b0f">
+<meta name="color-scheme" content="light dark">
 <meta property="og:title" content="Elight Studio: a music studio on your phone">
 <meta property="og:description" content="Record, make beats, play synths and mix, offline on your Android phone.">
 <meta property="og:image" content="https://elightlabs.xyz/elight-studio/assets/1_studio.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/elight-studio.png">
 <link rel="apple-touch-icon" href="/elight-studio/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/elight-studio/style.css">
+<link rel="alternate" hreflang="en" href="/elight-studio/">
+<link rel="alternate" hreflang="vi" href="/elight-studio/index-vi.html">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/assets/site.js" defer></script>
 <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 </head>
 <body>
+
 <header class="nav">
-  <div class="wrap">
-    <a class="brand" href="/elight-studio/"><img src="/assets/elight-studio.png" alt="">Elight Studio</a>
-    <nav class="nav-links" aria-label="Main">
-      <a href="#features">Features</a>
-      <a href="/elight-studio/support.html">Support</a>
-      <a href="/privacy-policy.html#elight-studio">Privacy</a>
-    </nav>
-    <a class="btn btn-primary btn-small" href="https://play.google.com/store/apps/details?id=com.delight.tools.cutter"><i class="ph-fill ph-google-play-logo" aria-hidden="true"></i>Google Play</a>
-  </div>
+    <div class="container">
+        <div class="crumbs">
+            <a class="brand" href="/"><img class="brand-mark" src="/assets/brand/mark.svg" alt="" width="28" height="28"><span class="brand-name">Elight Labs</span></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="app-crumb" href="/elight-studio/"><img src="/assets/elight-studio.png" alt="" width="26" height="26">Elight Studio</a>
+        </div>
+        <nav aria-label="Main">
+            <a href="#features">Features</a>
+            <a href="/elight-studio/support.html" data-keep>Support</a>
+            <a href="/privacy-policy.html#elight-studio">Privacy</a>
+            <a class="lang" href="/elight-studio/index-vi.html" data-keep>Tiếng Việt</a>
+        </nav>
+    </div>
 </header>
 
 <main>
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <h1 class="rise" style="--i:0">A music studio <em>in your pocket</em>.</h1>
-        <p class="lead rise" style="--i:1">Record vocals on many tracks, make beats, play synths and mix your song, right on your Android phone.</p>
-        <div class="cta-row rise" style="--i:2">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.delight.tools.cutter"><i class="ph-fill ph-google-play-logo" aria-hidden="true"></i>Get it on Google Play</a>
-          <a class="btn btn-ghost" href="#features">See what's inside</a>
+<section class="app-hero">
+    <div class="container">
+        <div>
+            <div class="app-id rise">
+                <img src="/assets/elight-studio.png" alt="Elight Studio app icon" width="64" height="64">
+                <div><strong>Elight Studio</strong><span>Music maker and audio editor · Android</span></div>
+            </div>
+            <h1 class="rise" style="--d:.06s">A music studio <em>in your pocket</em>.</h1>
+            <p class="lead rise" style="--d:.12s">Record vocals on many tracks, make beats, play synths and mix your song, right on your Android phone.</p>
+            <div class="stores rise" style="--d:.18s">
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.delight.tools.cutter"><i class="ph-fill ph-google-play-logo" aria-hidden="true"></i>Get it on Google Play</a>
+                <a class="btn btn-ghost" href="#features">See what's inside</a>
+            </div>
         </div>
-      </div>
-      <div class="device rise" style="--i:2">
-        <img src="/elight-studio/assets/1_studio.jpg" alt="Elight Studio with vocal, drum, bass and electric piano tracks on the timeline" width="660" height="1402">
-      </div>
+        <div class="hero-visual rise" style="--d:.15s">
+            <figure class="device"><img src="/elight-studio/assets/1_studio.jpg" alt="Elight Studio with vocal, drum, bass and electric piano tracks on the timeline" width="660" height="1402" fetchpriority="high"></figure>
+            <figure class="device"><img src="/elight-studio/assets/3_drums.jpg" alt="Drum pattern editor" width="660" height="1402"></figure>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="features" id="features">
-    <div class="wrap">
-      <h2 class="section-title reveal">Record, write, beat, mix.</h2>
-      <p class="section-sub reveal">Everything you need to sketch a song, with the audio tools you already know.</p>
-
-      <div class="bento">
-        <article class="tile tile-curve reveal">
-          <h3>Write melodies in a piano roll</h3>
-          <p>Play the on-screen keys or a USB or Bluetooth MIDI keyboard, then move, resize and quantize notes.</p>
-          <div class="shot shot-top shot-tall"><img src="/elight-studio/assets/2_piano.jpg" alt="Piano roll with notes for an electric piano track" loading="lazy" width="660" height="1402"></div>
-        </article>
-        <article class="tile reveal">
-          <h3>Make beats on drum pads</h3>
-          <p>A synthesized kit with kick, snare, hats, toms and more. Or start a new song on a ready-made beat.</p>
-          <div class="shot shot-top"><img src="/elight-studio/assets/3_drums.jpg" alt="Drum pattern editor" loading="lazy" width="660" height="1402"></div>
-        </article>
-        <article class="tile tile-smooth reveal">
-          <h3>Mix with effects</h3>
-          <p>EQ with low cut, compressor, reverb and tempo-synced delay on every track, and a master limiter.</p>
-          <div class="shot shot-top"><img src="/elight-studio/assets/4_fx.jpg" alt="Track effects with EQ and compressor" loading="lazy" width="660" height="1402"></div>
-        </article>
-        <article class="tile tile-wide reveal">
-          <div class="copy">
-            <h3>Audio tools, still here</h3>
-            <p>Cut an MP3 on its waveform for a ringtone, record your voice, convert between MP3, AAC, WAV and FLAC, merge clips, change speed and pitch, or layer two tracks.</p>
-          </div>
-          <div class="shot shot-top"><img src="/elight-studio/assets/6_tools.jpg" alt="Audio tools: Cut, Record, Convert, Merge, Effects and Mix" loading="lazy" width="660" height="1402"></div>
-        </article>
-      </div>
+<section class="section" id="features">
+    <div class="container">
+        <h2 class="reveal">Record, write, beat, mix.</h2>
+        <p class="intro reveal">Everything you need to sketch a song, with the audio tools you already know.</p>
+        <div class="features">
+            <div class="feature reveal">
+                <i class="ph ph-piano-keys" aria-hidden="true"></i>
+                <h3>Write melodies in a piano roll</h3>
+                <p>Play the on-screen keys or a USB or Bluetooth MIDI keyboard, then move, resize and quantize notes.</p>
+            </div>
+            <div class="feature reveal" style="--d:.08s">
+                <i class="ph ph-waveform" aria-hidden="true"></i>
+                <h3>Make beats on drum pads</h3>
+                <p>A synthesized kit with kick, snare, hats, toms and more. Or start a new song on a ready-made beat.</p>
+            </div>
+            <div class="feature reveal">
+                <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
+                <h3>Mix with effects</h3>
+                <p>EQ with low cut, compressor, reverb and tempo-synced delay on every track, and a master limiter.</p>
+            </div>
+            <div class="feature reveal" style="--d:.08s">
+                <i class="ph ph-scissors" aria-hidden="true"></i>
+                <h3>Audio tools, still here</h3>
+                <p>Cut an MP3 on its waveform for a ringtone, record your voice, convert between MP3, AAC, WAV and FLAC, merge clips, change speed and pitch, or layer two tracks.</p>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="numbers">
-    <div class="wrap grid">
-      <div class="num reveal"><b>10<span>+</span></b><p>Built-in synth sounds, plus your own SoundFont (.sf2) files.</p></div>
-      <div class="num reveal"><b>MIDI</b><p>Play and record with a USB or Bluetooth keyboard.</p></div>
-      <div class="num reveal"><b>4</b><p>Export formats: MP3, AAC, WAV and FLAC.</p></div>
-      <div class="num reveal"><b>6</b><p>Languages, switchable inside the app.</p></div>
+<section class="section" id="screenshots">
+    <div class="container">
+        <h2 class="reveal">Screenshots</h2>
+        <div class="gallery reveal">
+            <figure><div class="device"><img src="/elight-studio/assets/1_studio.jpg" alt="Elight Studio with vocal, drum, bass and electric piano tracks on the timeline" loading="lazy" width="660" height="1402"></div><figcaption>Multitrack studio</figcaption></figure>
+            <figure><div class="device"><img src="/elight-studio/assets/2_piano.jpg" alt="Piano roll with notes for an electric piano track" loading="lazy" width="660" height="1402"></div><figcaption>Piano roll</figcaption></figure>
+            <figure><div class="device"><img src="/elight-studio/assets/3_drums.jpg" alt="Drum pattern editor" loading="lazy" width="660" height="1402"></div><figcaption>Drum pads</figcaption></figure>
+            <figure><div class="device"><img src="/elight-studio/assets/4_fx.jpg" alt="Track effects with EQ and compressor" loading="lazy" width="660" height="1402"></div><figcaption>Track effects</figcaption></figure>
+            <figure><div class="device"><img src="/elight-studio/assets/6_tools.jpg" alt="Audio tools: Cut, Record, Convert, Merge, Effects and Mix" loading="lazy" width="660" height="1402"></div><figcaption>Audio tools</figcaption></figure>
+            <figure><div class="device"><img src="/elight-studio/assets/7_cut.jpg" alt="Cutting an audio file on its waveform" loading="lazy" width="660" height="1402"></div><figcaption>Cut audio</figcaption></figure>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="promise">
-    <div class="wrap">
-      <div class="card reveal">
-        <h2>Your music stays on your phone.</h2>
-        <p>Recordings, songs, MIDI and SoundFonts are stored on your device. Every studio and audio feature works offline. Elight Studio is free and supported by ads; where the law requires it, you choose your ad privacy settings in the app.</p>
-        <ul class="facts">
-          <li><i class="ph ph-wifi-slash" aria-hidden="true"></i>Works offline</li>
-          <li><i class="ph ph-user-circle-dashed" aria-hidden="true"></i>No account</li>
-          <li><i class="ph ph-microphone" aria-hidden="true"></i>Mic only while recording</li>
-          <li><i class="ph ph-sliders-horizontal" aria-hidden="true"></i>Ad privacy choices</li>
-        </ul>
-        <a class="btn btn-ghost" href="/privacy-policy.html#elight-studio">Read the privacy policy</a>
-      </div>
+<section class="section">
+    <div class="container">
+        <div class="stats">
+            <div class="stat reveal"><b>10<span>+</span></b><p>Built-in synth sounds, plus your own SoundFont (.sf2) files.</p></div>
+            <div class="stat reveal" style="--d:.06s"><b>MIDI</b><p>Play and record with a USB or Bluetooth keyboard.</p></div>
+            <div class="stat reveal" style="--d:.12s"><b>4</b><p>Export formats: MP3, AAC, WAV and FLAC.</p></div>
+            <div class="stat reveal" style="--d:.18s"><b>6</b><p>Languages, switchable inside the app.</p></div>
+        </div>
     </div>
-  </section>
+</section>
+
+<section class="section" id="privacy">
+    <div class="container">
+        <div class="panel reveal">
+            <h2>Your music stays on your phone.</h2>
+            <p>Recordings, songs, MIDI and SoundFonts are stored on your device. Every studio and audio feature works offline. Elight Studio is free and supported by ads; where the law requires it, you choose your ad privacy settings in the app.</p>
+            <ul class="checks">
+                <li><i class="ph ph-wifi-slash" aria-hidden="true"></i>Works offline</li>
+                <li><i class="ph ph-user-circle-dashed" aria-hidden="true"></i>No account</li>
+                <li><i class="ph ph-microphone" aria-hidden="true"></i>Mic only while recording</li>
+                <li><i class="ph ph-sliders-horizontal" aria-hidden="true"></i>Ad privacy choices</li>
+            </ul>
+            <a class="btn btn-ghost" href="/privacy-policy.html#elight-studio">Read the privacy policy</a>
+        </div>
+    </div>
+</section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <span>&copy; 2026 <a href="/">Elight Labs</a></span>
-    <nav aria-label="Footer">
-      <a href="/elight-studio/support.html">Support</a>
-      <a href="/privacy-policy.html#elight-studio">Privacy</a>
-    </nav>
-  </div>
+<footer class="footer">
+    <div class="container">
+        <span>&copy; 2026 <a href="/">Elight Labs</a></span>
+        <nav aria-label="Footer">
+            <a href="/elight-studio/support.html">Support</a>
+            <a href="/privacy-policy.html#elight-studio">Privacy</a>
+        </nav>
+    </div>
 </footer>
 </body>
 </html>

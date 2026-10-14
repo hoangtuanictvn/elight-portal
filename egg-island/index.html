@@ -3,58 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Egg Island: Merge Eggs – Elight Labs</title>
+<title>Egg Island: Merge Eggs | Elight Labs</title>
 <meta name="description" content="Drop eggs, merge them into bigger ones, and raise the cute pets that hatch. A cozy physics puzzle for iPhone and Android.">
 <link rel="icon" href="/assets/egg-island.png">
 <link rel="apple-touch-icon" href="/assets/egg-island.png">
+<meta name="color-scheme" content="light dark">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="alternate" hreflang="en" href="/egg-island/">
+<link rel="alternate" hreflang="vi" href="/egg-island/index-vi.html">
 <link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/assets/site.js" defer></script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 </head>
 <body>
-<div class="wrap doc">
-<header class="top">
-    <a class="brand" href="/">Elight Labs</a>
-    <nav><a href="/egg-island/support.html">Support</a><a href="/privacy-policy.html#egg-island">Privacy</a><a href="/egg-island/terms.html">Terms</a><a href="/egg-island/index-vi.html">Tiếng Việt</a></nav>
+
+<header class="nav">
+    <div class="container">
+        <div class="crumbs">
+            <a class="brand" href="/"><img class="brand-mark" src="/assets/brand/mark.svg" alt="" width="28" height="28"><span class="brand-name">Elight Labs</span></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="app-crumb" href="/egg-island/"><img src="/assets/egg-island.png" alt="" width="26" height="26">Egg Island</a>
+        </div>
+        <nav aria-label="Main">
+            <a href="#features">Features</a>
+            <a href="/egg-island/support.html" data-keep>Support</a>
+            <a href="/privacy-policy.html#egg-island">Privacy</a>
+            <a href="/egg-island/terms.html">Terms</a>
+            <a class="lang" href="/egg-island/index-vi.html" data-keep>Tiếng Việt</a>
+        </nav>
+    </div>
 </header>
 
-<div class="app" style="margin-top:32px">
-    <img src="/assets/egg-island.png" alt="Egg Island app icon">
-    <div>
-        <h1 style="margin:0">Egg Island: Merge Eggs</h1>
-        <p class="tag">Cozy physics merge puzzle · iPhone and Android</p>
+<main>
+<section class="app-hero">
+    <div class="container">
+        <div>
+            <div class="app-id rise">
+                <img src="/assets/egg-island.png" alt="Egg Island app icon" width="64" height="64">
+                <div><strong>Egg Island</strong><span>Cozy physics merge puzzle · iPhone and Android</span></div>
+            </div>
+            <h1 class="rise" style="--d:.06s">Egg Island: Merge Eggs</h1>
+            <p class="lead rise" style="--d:.12s">Drop eggs into the basket, merge matching eggs into bigger ones,
+            and raise the cute pets that hatch.</p>
+            <div class="stores rise" style="--d:.18s">
+                <a class="btn btn-primary" href="#features">How to play <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="btn btn-ghost" href="/egg-island/support.html">Support</a>
+            </div>
+        </div>
+        <div class="hero-visual rise" style="--d:.15s">
+            <div class="hero-art"><img src="/assets/egg-island.png" alt="" width="256" height="256" fetchpriority="high"></div>
+        </div>
     </div>
-</div>
+</section>
 
-<p class="lead" style="margin-top:24px">Drop eggs into the basket, merge matching eggs into bigger ones,
-and raise the cute pets that hatch.</p>
+<section class="section" id="features">
+    <div class="container">
+        <h2 class="reveal">Drop, merge, hatch.</h2>
+        <div class="features">
+            <div class="feature reveal">
+                <i class="ph ph-egg" aria-hidden="true"></i>
+                <h3>How to play</h3>
+                <p>When two eggs of the same kind touch, they merge into a bigger one. Keep merging to climb all 12
+                tiers. Let the basket overflow and the run ends, so choose every drop with care.</p>
+            </div>
+            <div class="feature reveal" style="--d:.08s">
+                <i class="ph ph-paw-print" aria-hidden="true"></i>
+                <h3>Your pet comes along</h3>
+                <p>A pet walks below the basket, collects the gold, gems and food your merges drop, and fills its energy
+                bar when you feed it. A full bar unlocks a skill that clears the board when you are stuck. Three pets to
+                raise, each with levels, evolutions and new skills.</p>
+            </div>
+            <div class="feature reveal">
+                <i class="ph ph-trophy" aria-hidden="true"></i>
+                <h3>More to do</h3>
+                <ul>
+                    <li>Daily quests and rewards</li>
+                    <li>A world leaderboard for high score and pet level</li>
+                    <li>Your run is saved when you close the app</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-<h2>How to play</h2>
-<p>When two eggs of the same kind touch, they merge into a bigger one. Keep merging to climb all 12
-tiers. Let the basket overflow and the run ends, so choose every drop with care.</p>
+<section class="section" id="help">
+    <div class="container">
+        <div class="panel reveal">
+            <h2>Privacy and help</h2>
+            <div class="stores">
+                <a class="btn btn-ghost" href="/privacy-policy.html#egg-island">Privacy Policy</a>
+                <a class="btn btn-ghost" href="/egg-island/terms.html">Terms of Use</a>
+                <a class="btn btn-ghost" href="/egg-island/support.html">Support</a>
+                <a class="btn btn-ghost" href="/egg-island/delete-data.html">Delete your data</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
 
-<h2>Your pet comes along</h2>
-<p>A pet walks below the basket, collects the gold, gems and food your merges drop, and fills its energy
-bar when you feed it. A full bar unlocks a skill that clears the board when you are stuck. Three pets to
-raise, each with levels, evolutions and new skills.</p>
-
-<h2>More to do</h2>
-<ul>
-    <li>Daily quests and rewards</li>
-    <li>A world leaderboard for high score and pet level</li>
-    <li>Your run is saved when you close the app</li>
-</ul>
-
-<h2>Privacy and help</h2>
-<div class="links">
-    <a href="/privacy-policy.html#egg-island">Privacy Policy</a>
-    <a href="/egg-island/terms.html">Terms of Use</a>
-    <a href="/egg-island/support.html">Support</a>
-    <a href="/egg-island/delete-data.html">Delete your data</a>
-</div>
-
-<footer class="site">
-    <span>&copy; 2026 Elight Labs</span>
-    <span><a href="/">Home</a> · <a href="/egg-island/index-vi.html">Tiếng Việt</a></span>
+<footer class="footer">
+    <div class="container">
+        <span>&copy; 2026 <a href="/">Elight Labs</a></span>
+        <nav aria-label="Footer">
+            <a href="/">Home</a>
+            <a href="/egg-island/support.html">Support</a>
+            <a href="/egg-island/terms.html">Terms</a>
+            <a href="/privacy-policy.html#egg-island">Privacy</a>
+            <a href="/egg-island/index-vi.html">Tiếng Việt</a>
+        </nav>
+    </div>
 </footer>
-</div>
 </body>
 </html>
