@@ -18,6 +18,10 @@ Local preview: run any static server from the repo root, e.g. `python3 -m http.s
 - Languages: English is the default at the unsuffixed URL; the Vietnamese version is the same filename with `-vi` (e.g. `slomoly/support-vi.html`, `/index-vi.html`). Exception: Rabese support/terms keep `support.html`/`terms.html` (Vietnamese) and `support-en.html`/`terms-en.html` (English) because the app opens those URLs. Each page in a pair has `<link rel="alternate" hreflang="en|vi">` to its counterpart and an `a.lang` link as the last nav item; `site.js` remembers the visitor's choice and redirects to the alternate on later pages. Vietnamese pages link to Vietnamese pages. Maneki Dict links the privacy policy as `/privacy-policy.html` with no anchor on both languages, on purpose. When editing a page, update its counterpart too.
 - `app-ads.txt` must stay at the domain root. Every app uses AdMob publisher `pub-3969854058386286`, so it stays the same when apps are added. Only an app on a different publisher would need a new line.
 
+## URLs that must keep working
+
+Store listings and the apps link to these, so never delete, rename or redirect the files: `/egg-island/support.html` (Egg Island support URL), `/egg-island/delete-data.html` (Google Play data deletion URL), `/rabese/support(.html)`, `/rabese/support-en(.html)`, `/rabese/terms(.html)`, `/rabese/terms-en(.html)` (opened inside the Rabese app), `/privacy-policy.html` with its app anchors, and `/app-ads.txt`.
+
 ## Things that must stay in sync
 
 - **Both language versions of every page**, and **both privacy policies**. Any change to one (app section, AdMob wording, effective date in `<p class="updated">`) must be mirrored in the other.
