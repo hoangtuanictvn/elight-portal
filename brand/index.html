@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand | Elight Labs</title>
+<meta name="description" content="Elight Labs logo, colors and typography, with downloadable logo files.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image" content="https://elightlabs.xyz/assets/brand/og.jpg">
+<link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/assets/site.js" defer></script>
+<style>
+.brand-hero { padding: 72px 0 24px; }
+.brand-hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); letter-spacing: -.04em; line-height: 1.04; font-weight: 650; margin: 0 0 16px; max-width: 16ch; }
+.brand-hero p { color: var(--muted); font-size: 1.15rem; max-width: 52ch; margin: 0; }
+.stage { display: grid; grid-template-columns: 7fr 5fr; gap: 16px; }
+.stage > div { border-radius: var(--radius); display: grid; place-items: center; min-height: 320px; padding: 40px; }
+.stage .light { background: #f5f5f4; border: 1px solid #e2e2e4; }
+.stage .dark { background: #0e0e10; }
+.stage .coral { background: linear-gradient(135deg, #ff6a3d, #c8381a); }
+.stage .mono { background: var(--surface); border: 1px solid var(--line); color: var(--fg); }
+.stage img.lockup { width: min(100%, 420px); }
+.stage img.mark { width: 140px; }
+.stage .coral img { width: 120px; filter: brightness(0) invert(1); }
+.stage .row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 0; min-height: 0; place-items: stretch; }
+.stage .row > div { border-radius: var(--radius); display: grid; place-items: center; min-height: 220px; }
+.sizes { display: flex; align-items: end; gap: 28px; }
+.sizes img { border-radius: 22%; }
+.story { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.story .big { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 48px; display: grid; place-items: center; }
+.story .big svg { width: min(100%, 320px); height: auto; }
+.swatches { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 12px; }
+.swatch { border-radius: 24px; min-height: 200px; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid var(--line); }
+.swatch b { font-size: 1.05rem; letter-spacing: -.01em; }
+.swatch code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85rem; opacity: .8; }
+.type { display: grid; grid-template-columns: 5fr 7fr; gap: 48px; align-items: end; border-top: 1px solid var(--line); padding-top: 32px; }
+.type .aa { font-size: clamp(6rem, 14vw, 11rem); line-height: .9; letter-spacing: -.06em; font-weight: 650; }
+.type .scale p { margin: 0 0 12px; }
+.icons-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.icons-row a { text-decoration: none; text-align: center; font-size: .92rem; color: var(--muted); }
+.icons-row img { width: 100%; max-width: 120px; margin: 0 auto 10px; border-radius: 22%; box-shadow: var(--shadow); transition: transform .4s var(--ease); }
+.icons-row a:hover img { transform: translateY(-4px) rotate(-3deg); }
+.downloads { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 800px) {
+    .stage, .story, .type { grid-template-columns: 1fr; }
+    .stage .row { grid-template-columns: 1fr; }
+    .swatches { grid-template-columns: 1fr 1fr; }
+    .swatches .swatch:first-child { grid-column: 1 / -1; }
+    .icons-row { grid-template-columns: repeat(3, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+    <div class="container">
+        <div class="crumbs">
+            <a class="brand" href="/"><img class="brand-mark" src="/assets/brand/mark.svg" alt="" width="28" height="28"><span class="brand-name">Elight Labs</span></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <span class="app-crumb">Brand</span>
+        </div>
+        <nav aria-label="Main">
+            <a href="#logo">Logo</a>
+            <a href="#color">Color</a>
+            <a href="#type">Type</a>
+            <a href="#downloads" data-keep>Downloads</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+<section class="brand-hero">
+    <div class="container">
+        <h1 class="rise">One mark, six small apps.</h1>
+        <p class="rise" style="--d:.08s">The Elight Labs logo, colors and type, and how to use them.</p>
+    </div>
+</section>
+
+<section class="section" id="logo">
+    <div class="container">
+        <div class="stage">
+            <div class="light reveal"><img class="lockup" src="/assets/brand/logo.svg" alt="Elight Labs logo on a light background"></div>
+            <div class="dark reveal" style="--d:.08s"><img class="mark" src="/assets/brand/mark.svg" alt="Elight Labs mark"></div>
+            <div class="row">
+                <div class="dark reveal"><img class="lockup" src="/assets/brand/logo-on-dark.svg" alt="Elight Labs logo on a dark background" style="width:min(80%,360px)"></div>
+                <div class="coral reveal" style="--d:.08s"><img src="/assets/brand/glyph.svg" alt="Elight Labs glyph in white"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container story">
+        <div class="big reveal">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+                <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff6a3d"/><stop offset="1" stop-color="#c8381a"/></linearGradient></defs>
+                <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+                <g fill="#fff"><rect x="16" y="17" width="20" height="7" rx="3.5"/><rect x="16" y="28.5" width="15" height="7" rx="3.5"/><rect x="16" y="40" width="26" height="7" rx="3.5"/><circle cx="45" cy="20.5" r="5"/></g>
+                <g fill="none" stroke="#fff" stroke-opacity=".55" stroke-width=".4" stroke-dasharray="1 1"><path d="M16 8v48M48 8v48M8 16h48M8 48h48"/><circle cx="45" cy="20.5" r="8"/></g>
+            </svg>
+        </div>
+        <div class="reveal" style="--d:.08s">
+            <h2>An E that switches on.</h2>
+            <p class="intro" style="margin-bottom:24px">Three rounded bars form the E. They also read as a stack of apps. The dot beside the top bar is the light in Elight: a small signal that something is on.</p>
+            <div class="sizes" aria-label="The mark at different sizes">
+                <img src="/assets/brand/mark.svg" alt="" width="96" height="96">
+                <img src="/assets/brand/mark.svg" alt="" width="64" height="64">
+                <img src="/assets/brand/mark.svg" alt="" width="40" height="40">
+                <img src="/assets/brand/mark.svg" alt="" width="24" height="24">
+                <img src="/assets/brand/mark.svg" alt="" width="16" height="16">
+            </div>
+            <p class="note">The mark stays readable down to 16 px, the size of a browser tab icon.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="color">
+    <div class="container">
+        <h2 class="reveal">Color</h2>
+        <p class="intro reveal">One warm accent on quiet neutrals. Coral is for the mark, links and the main action, never for large blocks of text.</p>
+        <div class="swatches">
+            <div class="swatch reveal" style="background:linear-gradient(135deg,#ff6a3d,#c8381a);color:#fff;border-color:transparent"><b>Coral</b><code>#FF6A3D → #C8381A</code></div>
+            <div class="swatch reveal" style="background:#17171a;color:#ececef;border-color:transparent;--d:.05s"><b>Ink</b><code>#17171A</code></div>
+            <div class="swatch reveal" style="background:#f5f5f4;color:#17171a;--d:.1s"><b>Paper</b><code>#F5F5F4</code></div>
+            <div class="swatch reveal" style="background:#fde9e2;color:#17171a;border-color:transparent;--d:.15s"><b>Glow</b><code>#FDE9E2</code></div>
+        </div>
+        <p class="note">In dark mode the accent lightens to #FF7A57 and the background becomes #0E0E10, so text keeps WCAG AA contrast.</p>
+    </div>
+</section>
+
+<section class="section" id="type">
+    <div class="container">
+        <h2 class="reveal">Type</h2>
+        <div class="type reveal">
+            <div class="aa">Aa</div>
+            <div class="scale">
+                <p style="font-size:2rem;font-weight:650;letter-spacing:-.035em;line-height:1.1">Geist, semibold, tight tracking for headlines.</p>
+                <p style="font-size:1.1rem;color:var(--muted)">Geist regular for body text, at a comfortable 1.55 line height. One family across the whole site, self-hosted, with the system font as a fallback.</p>
+                <p class="note">Geist is by Vercel, released under the SIL Open Font License.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="reveal">The app family</h2>
+        <p class="intro reveal">Each app keeps its own icon and color. The Elight Labs mark ties them together on this site and in the stores.</p>
+        <div class="icons-row reveal">
+            <a href="/elight-studio/"><img src="/assets/elight-studio.png" alt="" width="120" height="120">Elight Studio</a>
+            <a href="/slomoly/"><img src="/assets/slomoly.png" alt="" width="120" height="120">Slomoly</a>
+            <a href="/rabese/"><img src="/assets/rabese.png" alt="" width="120" height="120">Rabese</a>
+            <a href="/maneki-dict/"><img src="/assets/maneki-dict.png" alt="" width="120" height="120">Maneki Dict</a>
+            <a href="/simple-reader/"><img src="/assets/simple-reader.png" alt="" width="120" height="120">Simple Reader</a>
+            <a href="/egg-island/"><img src="/assets/egg-island.png" alt="" width="120" height="120">Egg Island</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="downloads">
+    <div class="container">
+        <div class="panel reveal">
+            <h2>Logo files</h2>
+            <p>Use the files as they are: don't recolor the mark, stretch it, or add effects. Leave space around the logo at least as wide as the dot.</p>
+            <div class="downloads">
+                <a class="btn btn-primary" href="/assets/brand/logo.svg" download>Logo, light</a>
+                <a class="btn btn-ghost" href="/assets/brand/logo-on-dark.svg" download>Logo, dark</a>
+                <a class="btn btn-ghost" href="/assets/brand/logo-mono.svg" download>Logo, one color</a>
+                <a class="btn btn-ghost" href="/assets/brand/mark.svg" download>Mark</a>
+                <a class="btn btn-ghost" href="/assets/brand/icon-512.png" download>Mark, PNG 512</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <span>&copy; 2026 <a href="/">Elight Labs</a></span>
+        <nav aria-label="Footer">
+            <a href="/">Home</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
