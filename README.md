@@ -16,10 +16,13 @@ folders: edit pages here.
 | `/maneki-dict/` | Maneki Dict (Japanese–Vietnamese dictionary, `com.deli.edu.quickdict`) intro site, Vietnamese: `index` (app details and screenshots), `support`, `terms`; privacy lives only in the shared policy |
 | `/simple-reader/` | Simple Reader (PDF/DjVu reader, `com.delight.ereader`) site, English: `index`, `support`; privacy lives only in the shared policy |
 | `/egg-island/` | Egg Island (merge puzzle game, `xyz.moonraise.eggisland`) site, English + `-vi`: `index`, `support`, `terms`, `delete-data` (Google Play data deletion URL). Its privacy section is the only one describing a leaderboard, analytics, purchases and iOS tracking |
-| `/assets/` | Shared CSS and app icons |
+| `/brand/` | Brand guidelines: logo, colors, type, logo downloads |
+| `/assets/` | Shared CSS/JS (`site.css`, `site.js`, landing-only `home.css`), Geist font, app icons, logo files in `assets/brand/` |
+
+Every page exists in English (default URL) and Vietnamese (`-vi` suffix; Rabese support/terms use `-en` for English instead). The language link in the nav switches between them and the choice is remembered.
 
 `vercel.json` redirects the old per-app privacy paths to the shared policy and serves
 `/rabese/support` style URLs without `.html` (used inside the Rabese app).
 
 Adding an app: add a card to `index.html` linking to `/<app>/`, a section to both privacy policies,
-the `/<app>/` pages (store buttons, support and privacy links live there, not on the card), and its icon in `assets/`. All apps share AdMob publisher `pub-3969854058386286`, so `app-ads.txt` stays as is; an app on a different publisher would need its own line.
+the `/<app>/` pages (store buttons, support and privacy links live there, not on the card), and its icon in `assets/`. Build the pages from the shared components in `assets/site.css`, copying an existing app (for example `maneki-dict/`) so every app page has the same layout. All apps share AdMob publisher `pub-3969854058386286`, so `app-ads.txt` stays as is; an app on a different publisher would need its own line.
