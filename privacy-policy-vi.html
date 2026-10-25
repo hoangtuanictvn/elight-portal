@@ -29,7 +29,7 @@
 <main class="container doc-layout">
     <div class="doc-head">
         <h1>Chính sách quyền riêng tư</h1>
-        <p class="updated">Ngày hiệu lực: 13/10/2026</p>
+        <p class="updated">Ngày hiệu lực: 25/10/2026</p>
 
         <p>Chính sách này áp dụng cho các ứng dụng di động do Anh Tuan Hoang phát hành dưới tên
         <strong>Elight Labs</strong> ("chúng tôi"):</p>
@@ -70,7 +70,9 @@
     <li>Egg Island là ngoại lệ duy nhất cho hai ý tiếp theo: trò chơi có bảng xếp hạng trực tuyến, dùng
         Firebase để phân tích và báo lỗi, có mua trong ứng dụng, và trên iPhone sẽ xin phép bạn trước khi
         theo dõi. Mục riêng của Egg Island bên dưới liệt kê chính xác những gì được gửi đi.</li>
-    <li>Các ứng dụng còn lại không có tài khoản người dùng và không có analytics.</li>
+    <li>Các ứng dụng còn lại không có tài khoản người dùng. Ngoài Egg Island, chỉ bản Android của Rabese
+        (phân tích và báo lỗi) và Slomoly (phân tích) dùng Firebase; mục riêng của từng ứng dụng bên dưới
+        liệt kê những gì được gửi đi.</li>
     <li>Chúng tôi không thu thập thông tin cá nhân như tên, email, số điện thoại, danh bạ hay vị trí.
         Thứ duy nhất bạn tự nhập mà được gửi đi là tên hiển thị trên bảng xếp hạng Egg Island.</li>
     <li>Egg Island (iPhone và Android) và bản Android của Elight Studio, Slomoly, Rabese hiển thị quảng cáo
@@ -115,6 +117,12 @@ dụng khác (ví dụ ứng dụng nhắn tin), chính sách của ứng dụng
         có SDK quảng cáo, analytics hay báo lỗi của bên thứ ba.</li>
     <li><strong>Android</strong>: có quảng cáo Google AdMob: banner ở màn hình chính và video có
         thưởng (tuỳ chọn) để xuất video không có watermark. Xem mục 4.</li>
+    <li><strong>Phân tích (Android)</strong>: Firebase Analytics ghi nhận cách ứng dụng được dùng (phiên
+        sử dụng, màn hình và công cụ đã mở, lượt xuất video bắt đầu và hoàn tất, sự kiện quảng cáo) dưới
+        một mã do Firebase tạo, kèm mẫu máy, phiên bản Android và vị trí gần đúng suy ra từ địa chỉ IP.
+        Không bao gồm video, bài hát hay nội dung dự án của bạn, không dùng mã quảng cáo và không dùng
+        để cá nhân hoá quảng cáo. Ở EEA và Vương quốc Anh, tính năng này chỉ bắt đầu sau bước đồng ý và
+        tuân theo lựa chọn quảng cáo của bạn.</li>
     <li>Xoá dự án sẽ xoá các tệp của dự án. Video đã lưu vào thư viện ảnh vẫn còn cho đến khi bạn xoá.</li>
 </ul>
 </section>
@@ -124,17 +132,22 @@ dụng khác (ví dụ ứng dụng nhắn tin), chính sách của ứng dụng
 <ul>
     <li><strong>iPhone</strong>: không quảng cáo, không theo dõi, không dùng mã quảng cáo (IDFA),
         không analytics bên thứ ba, không vị trí.</li>
-    <li><strong>Android</strong>: có quảng cáo Google AdMob: banner ở đầu các màn hình (kể cả màn học
-        và bài kiểm tra) và trong danh sách dài, quảng cáo toàn màn hình sau khi bạn học xong một lượt
-        hoặc làm xong bài kiểm tra (tối đa một lần trong vài phút), và khi bạn quay lại ứng dụng. Quảng
-        cáo toàn màn hình không bao giờ hiện giữa bài học hay khi đang phát âm. Ở EEA và Anh, ứng dụng
+    <li><strong>Android</strong>: có quảng cáo Google AdMob: thẻ quảng cáo có nhãn "Quảng cáo" trong các
+        danh sách câu dài, banner ở màn học thẻ và màn kiểm tra, và quảng cáo toàn màn hình sau khi bạn
+        học xong một lượt hoặc làm xong bài kiểm tra (tối đa một lần trong vài phút). Quảng cáo toàn màn hình không bao giờ hiện giữa bài học hay khi đang phát âm. Ở EEA và Anh, ứng dụng
         hỏi sự đồng ý của bạn trước. Xem mục 4.</li>
+    <li><strong>Phân tích và báo lỗi (Android)</strong>: Firebase Analytics ghi nhận cách ứng dụng được
+        dùng (phiên sử dụng, màn hình đã mở, sự kiện quảng cáo) dưới một mã do Firebase tạo, kèm mẫu máy,
+        phiên bản Android và vị trí gần đúng suy ra từ địa chỉ IP. Analytics chỉ bắt đầu sau bước xin đồng
+        ý và tuân theo lựa chọn quảng cáo của bạn. Firebase Crashlytics gửi báo cáo lỗi (mẫu máy, phiên bản
+        Android, vị trí lỗi trong mã). Không có dữ liệu nào trong số này chứa bookmark, tiến độ học hay từ
+        khoá tìm kiếm của bạn.</li>
     <li><strong>Dữ liệu trên thiết bị</strong>: câu đã bookmark, câu đã đánh dấu "đã học" và thời điểm,
         số lần luyện, từ khoá tìm kiếm gần đây và cài đặt (ngôn ngữ, pinyin, âm thanh, rung, mục tiêu
         mỗi ngày) lưu trong cơ sở dữ liệu cục bộ, không đồng bộ và không nằm trong sao lưu đám mây.
         Xoá trong Cài đặt → Xoá dữ liệu học tập, hoặc gỡ ứng dụng.</li>
     <li><strong>Nội dung offline</strong>: toàn bộ câu và audio có sẵn trong ứng dụng; dữ liệu học tập
-        không bao giờ được gửi đi. Bản Android chỉ kết nối Internet để tải quảng cáo. Các liên kết
+        không bao giờ được gửi đi. Bản Android chỉ kết nối Internet để tải quảng cáo và gửi dữ liệu phân tích, báo lỗi nêu trên. Các liên kết
         (chính sách, hỗ trợ, nguồn nội dung) chỉ mở trong trình duyệt khi bạn bấm.</li>
     <li><strong>Lưu ảnh</strong>: chỉ khi bạn chọn lưu thẻ thành tích. iPhone hỏi quyền thêm ảnh;
         Android 8–9 hỏi quyền ghi bộ nhớ; Android 10 trở lên không cần quyền. Ứng dụng không đọc ảnh

@@ -29,7 +29,7 @@
 <main class="container doc-layout">
     <div class="doc-head">
         <h1>Privacy Policy</h1>
-        <p class="updated">Effective date: October 13, 2026</p>
+        <p class="updated">Effective date: October 25, 2026</p>
 
         <p>This privacy policy applies to the following mobile apps made by Anh Tuan Hoang, publishing as
         <strong>Elight Labs</strong> ("we", "us"):</p>
@@ -68,7 +68,9 @@
     <li>Egg Island is the one exception to the next two points: it has an online leaderboard, uses
         Firebase analytics and crash reports, offers in-app purchases, and on iPhone asks for your
         permission to track. Its section below lists exactly what it sends.</li>
-    <li>Our other apps have no user accounts and no analytics.</li>
+    <li>Our other apps have no user accounts. Besides Egg Island, only the Android versions of Rabese
+        (analytics and crash reports) and Slomoly (analytics) use Firebase; their sections below list
+        what they send.</li>
     <li>We do not collect personal information such as your name, email address, phone number,
         contacts or location. The only thing you type that leaves your device is the Egg Island
         leaderboard name you choose.</li>
@@ -118,6 +120,12 @@ policy applies.</p>
         advertising, analytics or crash-reporting SDKs.</li>
     <li><strong>Android</strong>: supported by ads from Google AdMob: a banner on the home screen, and
         an optional rewarded video you can watch to export without the watermark. See section 4.</li>
+    <li><strong>Analytics (Android)</strong>: Firebase Analytics records how the app is used (sessions,
+        screens and tools opened, exports started and finished, ad events) under an ID that Firebase
+        generates, with the device model, Android version and an approximate location derived from the
+        IP address. It never includes your videos, songs or project contents, does not use the
+        advertising ID and is not used for ad personalization. In the EEA and UK it starts only after
+        the consent step and follows your ad consent choices.</li>
     <li>Deleting a project deletes its files. Exports saved to your photos stay there until you
         delete them.</li>
 </ul>
@@ -128,17 +136,23 @@ policy applies.</p>
 <ul>
     <li><strong>iPhone</strong>: no ads, no tracking, no advertising identifier (IDFA), no third-party
         analytics, no location.</li>
-    <li><strong>Android</strong>: supported by ads from Google AdMob: a banner at the top of the screens
-        (including study cards and quizzes) and in long lists, a full-screen ad after you finish a study
-        round or quiz (at most once every few minutes), and a full-screen ad when you return to the
-        app. Full-screen ads are never shown in the middle of a lesson or while pronunciation audio
+    <li><strong>Android</strong>: supported by ads from Google AdMob: ad cards labelled "Ad" inside long
+        sentence lists, a banner on the study-card and quiz screens, and a full-screen ad after you
+        finish a study round or quiz (at most once every few minutes). Full-screen ads are never shown in the middle of a lesson or while pronunciation audio
         plays. In the EEA and UK you are asked for consent first. See section 4.</li>
+    <li><strong>Analytics and crash reports (Android)</strong>: Firebase Analytics records how the app
+        is used (sessions, screens opened, ad events) under an ID that Firebase generates, with the
+        device model, Android version and an approximate location derived from the IP address. It
+        starts only after the consent step and follows your ad consent choices. Firebase Crashlytics
+        sends crash reports (device model, Android version, where in the code the crash happened).
+        Neither includes your bookmarks, progress or searches.</li>
     <li><strong>On-device data</strong>: bookmarks, sentences you marked as learned and when, test
         counts, recent searches and settings (language, pinyin, sound, haptics, daily goal) are
         stored in a local database, never synced and excluded from cloud backup. Delete them in
         Settings → Reset learning data, or by uninstalling the app.</li>
     <li><strong>Offline content</strong>: all sentences and audio ship inside the app; your learning
-        data is never sent anywhere. The Android version connects to the internet only to load ads.
+        data is never sent anywhere. The Android version connects to the internet only to load ads and send the analytics and crash
+        reports described above.
         Links (policy, support, content sources) open in your browser only when you tap them.</li>
     <li><strong>Saving images</strong>: only when you choose to save your progress card. iPhone asks
         for add-only Photos access; Android 8–9 asks for storage write access; Android 10 and later
